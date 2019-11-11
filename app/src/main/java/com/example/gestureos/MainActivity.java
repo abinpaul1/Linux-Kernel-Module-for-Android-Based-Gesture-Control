@@ -1,14 +1,17 @@
 package com.example.gestureos;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ActivityNotFoundException;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -70,6 +73,9 @@ public class MainActivity extends AppCompatActivity {
         Log.d(MainActivity.TAG,msg);
         String t = ".";
         Log.d(MainActivity.TAG, t);
+        if (msg=="U"){
+            unlock();
+        }
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
@@ -112,9 +118,38 @@ public class MainActivity extends AppCompatActivity {
                     Log.d(MainActivity.TAG,msg);
                     String t = ".";
                     Log.d(MainActivity.TAG, t);
+                    if (msg=="U"){
+                        unlock();
+                    }
                 }
                 break;
             }
         }
+    }
+
+    public void unlock(){
+        final EditText taskEditText = new EditText(this);
+        AlertDialog dialog = new AlertDialog.Builder(this)
+                .setTitle("Unlock prompt")
+                .setMessage("Enter your password")
+                .setView(taskEditText)
+                .setPositiveButton("Enter", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        String task = String.valueOf(taskEditText.getText());
+                        // convert String to char[] array
+                        char[] chars = task.toCharArray();
+
+                        // iterate over char[] array using enhanced for loop
+                        for (char ch : chars) {
+                            Log.d(MainActivity.TAG,Character.toString(ch));
+                            String t = ".";
+                            Log.d(MainActivity.TAG, t);
+                        }
+                    }
+                })
+                .setNegativeButton("Cancel", null)
+                .create();
+        dialog.show();
     }
 }
