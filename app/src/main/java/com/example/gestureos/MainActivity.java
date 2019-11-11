@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 msg = "l";
                 break;
             case R.id.unlock_screen:
-                msg = "u";
+                msg = "U";
                 break;
         }
         Log.d(MainActivity.TAG,msg);
@@ -92,6 +92,9 @@ public class MainActivity extends AppCompatActivity {
                             break;
                         case "turn off":
                             msg = "T";
+                            break;
+                        case "unlock":
+                            msg="U";
                             break;
                     }
                     Log.d(MainActivity.TAG,msg);

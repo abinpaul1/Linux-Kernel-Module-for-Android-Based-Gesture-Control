@@ -136,6 +136,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/hguideline2" />
 
+
     <Button
         android:id="@+id/lock_screen"
         android:layout_width="wrap_content"
@@ -145,7 +146,9 @@
         app:layout_constraintBottom_toTopOf="@+id/hguideline2"
         app:layout_constraintEnd_toStartOf="@+id/verti_guideline1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/hguideline3" />
+        app:layout_constraintTop_toTopOf="@id/hguideline3"
+        app:layout_constraintHorizontal_bias="0.775"
+        />
 
     <Button
         android:id="@+id/unlock_screen"
@@ -156,7 +159,9 @@
         app:layout_constraintBottom_toTopOf="@+id/hguideline4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/verti_guideline1"
-        app:layout_constraintTop_toTopOf="@+id/hguideline2" />
+        app:layout_constraintTop_toTopOf="@+id/hguideline2"
+        app:layout_constraintHorizontal_bias="0.225"
+        />
 
     <ImageView
         android:id="@+id/speak"
