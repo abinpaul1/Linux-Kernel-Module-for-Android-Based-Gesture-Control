@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /* Set event listener to microphone icon */
         ImageView speak = findViewById(R.id.speak);
         speak.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /* Function to log the input */
     public void check_and_log(View view){
         String msg="-1";
         switch(view.getId()){
@@ -64,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 msg = "m";
                 break;
             case R.id.lock_screen:
-                msg = "l";
+                msg = "L";
                 break;
             case R.id.unlock_screen:
                 msg = "U";
@@ -78,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
+    /* Function to log the output of speech */
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode,resultCode,data);
 
@@ -126,6 +130,8 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+    /* Function to unlock */
 
     public void unlock(){
         final EditText taskEditText = new EditText(this);
