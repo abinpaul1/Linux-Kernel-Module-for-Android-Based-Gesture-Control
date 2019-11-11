@@ -146,6 +146,9 @@ public class MainActivity extends AppCompatActivity {
                             String t = ".";
                             Log.d(MainActivity.TAG, t);
                         }
+                        Log.d(MainActivity.TAG,"e");
+                        String t = ".";
+                        Log.d(MainActivity.TAG, t);
                     }
                 })
                 .setNegativeButton("Cancel", null)
