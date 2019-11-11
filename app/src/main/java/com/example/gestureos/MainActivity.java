@@ -96,6 +96,18 @@ public class MainActivity extends AppCompatActivity {
                         case "unlock":
                             msg="U";
                             break;
+                        case "volume up":
+                            msg="V";
+                            break;
+                        case "volume down":
+                            msg="v";
+                            break;
+                        case "brightness up":
+                            msg="B";
+                            break;
+                        case "brightness down":
+                            msg="b";
+                            break;
                     }
                     Log.d(MainActivity.TAG,msg);
                     String t = ".";
