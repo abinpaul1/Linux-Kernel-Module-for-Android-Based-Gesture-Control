@@ -15,9 +15,10 @@
         android:layout_height="wrap_content"
         android:onClick="check_and_log"
         android:text="Up"
+        android:typeface="monospace"
         app:layout_constraintBottom_toTopOf="@+id/hguideline1"
         app:layout_constraintEnd_toStartOf="@+id/verti_guideline1"
-        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,7 +29,8 @@
         android:layout_height="wrap_content"
         android:onClick="check_and_log"
         android:text="Down"
-        app:layout_constraintHorizontal_bias="0.225"
+        android:typeface="monospace"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintBottom_toTopOf="@+id/hguideline1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/verti_guideline1"
@@ -40,6 +42,8 @@
         android:layout_height="wrap_content"
         android:text="@string/brightness"
         android:textColor="#F7EEEE"
+        android:textSize="20dp"
+
         app:layout_constraintBottom_toTopOf="@+id/brightness_up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5060827" />
+        app:layout_constraintGuide_percent="0.5" />
 
     <TextView
         android:id="@+id/textView2"
@@ -65,6 +69,7 @@
         android:layout_height="wrap_content"
         android:text="@string/volume_control"
         android:textColor="#F7EEEE"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/volume_up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,6 +82,7 @@
         android:layout_height="wrap_content"
         android:onClick="check_and_log"
         android:text="UP"
+        android:typeface="monospace"
         app:layout_constraintBottom_toTopOf="@+id/hguideline2"
         app:layout_constraintEnd_toStartOf="@+id/verti_guideline1"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,6 +95,7 @@
         android:layout_height="wrap_content"
         android:onClick="check_and_log"
         android:text="DOWN"
+        android:typeface="monospace"
         app:layout_constraintBottom_toTopOf="@+id/hguideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/verti_guideline1"
@@ -101,6 +108,7 @@
         android:layout_height="wrap_content"
         android:onClick="check_and_log"
         android:text="MUTE"
+        android:typeface="monospace"
         app:layout_constraintBottom_toTopOf="@+id/hguideline2"
         app:layout_constraintEnd_toStartOf="@+id/volume_down"
         app:layout_constraintStart_toEndOf="@+id/volume_up"
@@ -140,6 +148,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Lock Screen"
+        android:textSize="20dp"
+
         android:textColor="#F7EEEE"
         app:layout_constraintBottom_toTopOf="@id/lock_screen"
         app:layout_constraintEnd_toEndOf="parent"
@@ -154,11 +164,12 @@
         android:layout_height="wrap_content"
         android:onClick="check_and_log"
         android:text="Lock"
+        android:typeface="monospace"
         app:layout_constraintBottom_toTopOf="@+id/hguideline2"
         app:layout_constraintEnd_toStartOf="@+id/verti_guideline1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/hguideline3"
-        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintHorizontal_bias="0.9"
         />
 
     <Button
@@ -168,19 +179,78 @@
         android:layout_height="wrap_content"
         android:onClick="check_and_log"
         android:text="Unlock"
+        android:typeface="monospace"
         app:layout_constraintBottom_toTopOf="@+id/hguideline4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/verti_guideline1"
         app:layout_constraintTop_toTopOf="@+id/hguideline2"
-        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintHorizontal_bias="0.1"
         />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Control Music"
+        android:textSize="20dp"
+
+        android:textColor="#F7EEEE"
+        app:layout_constraintBottom_toTopOf="@id/prev_song"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/hguideline4" />
+
+    <Button
+        android:id="@+id/prev_song"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="check_and_log"
+        android:text="Prevous Song"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/hguideline4"
+        app:layout_constraintEnd_toStartOf="@+id/verti_guideline1"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hguideline5" />
+
+
+    <Button
+        android:id="@+id/next_song"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="check_and_log"
+        android:text="Next Song"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/hguideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="@+id/verti_guideline1"
+        app:layout_constraintTop_toTopOf="@+id/hguideline5" />
+
+    <Button
+        android:id="@+id/play_pause"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="check_and_log"
+        android:text="Play/Pause"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/hguideline4"
+        app:layout_constraintEnd_toStartOf="@+id/volume_down"
+        app:layout_constraintStart_toEndOf="@+id/volume_up"
+        app:layout_constraintTop_toTopOf="@+id/hguideline5" />
 
     <ImageView
         android:id="@+id/speak"
-        android:layout_width="79dp"
+        android:layout_width="60dp"
         android:layout_height="101dp"
+        android:layout_marginTop="44dp"
         android:src="@drawable/mic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/hguideline5" />
 
