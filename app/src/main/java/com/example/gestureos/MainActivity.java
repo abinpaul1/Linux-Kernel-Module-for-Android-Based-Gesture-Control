@@ -27,6 +27,15 @@ public class MainActivity extends AppCompatActivity {
             case R.id.brightness_up:
                 msg = "B";
                 break;
+            case R.id.volume_down:
+                msg = "v";
+                break;
+            case R.id.volume_up:
+                msg = "V";
+                break;
+            case R.id.mute:
+                msg = "m";
+                break;
         }
         Log.d(MainActivity.TAG,msg);
         String t = ".";

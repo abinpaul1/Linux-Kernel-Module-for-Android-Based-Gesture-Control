@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">GestureOS</string>
     <string name="brightness">Brightness</string>
+    <string name="volume_control">Volume Control</string>
 </resources>
