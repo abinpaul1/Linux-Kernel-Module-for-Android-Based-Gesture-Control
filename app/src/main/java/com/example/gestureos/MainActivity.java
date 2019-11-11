@@ -36,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.mute:
                 msg = "m";
                 break;
+            case R.id.lock:
+                msg = 'l';
+                break;
         }
         Log.d(MainActivity.TAG,msg);
         String t = ".";
