@@ -142,9 +142,8 @@
         android:layout_height="wrap_content"
         android:onClick="check_and_log"
         android:text="Lock"
-        app:layout_constraintHorizontal_bias="0.775"
         app:layout_constraintBottom_toTopOf="@+id/hguideline2"
-        app:layout_constraintEnd_toEndOf="@id/verti_guideline1"
+        app:layout_constraintEnd_toStartOf="@+id/verti_guideline1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/hguideline3" />
 
@@ -154,10 +153,10 @@
         android:layout_height="wrap_content"
         android:onClick="check_and_log"
         android:text="Unlock"
-        app:layout_constraintHorizontal_bias="0.225"
-        app:layout_constraintBottom_toTopOf="@+id/hguideline2"
+        app:layout_constraintBottom_toTopOf="@+id/hguideline4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/verti_guideline1"
+        app:layout_constraintTop_toTopOf="@+id/hguideline2" />
 
     <ImageView
         android:id="@+id/speak"
