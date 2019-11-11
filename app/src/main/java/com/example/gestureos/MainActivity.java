@@ -60,6 +60,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.mute:
                 msg = "m";
                 break;
+            case R.id.lock_screen:
+                msg = "l";
+                break;
+            case R.id.unlock_screen:
+                msg = "u";
+                break;
         }
         Log.d(MainActivity.TAG,msg);
         String t = ".";
