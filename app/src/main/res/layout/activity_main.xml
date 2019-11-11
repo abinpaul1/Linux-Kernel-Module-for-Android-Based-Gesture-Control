@@ -239,15 +239,14 @@
         android:text="Play/Pause"
         android:typeface="monospace"
         app:layout_constraintBottom_toTopOf="@+id/hguideline4"
-        app:layout_constraintEnd_toStartOf="@+id/volume_down"
-        app:layout_constraintStart_toEndOf="@+id/volume_up"
+        app:layout_constraintEnd_toStartOf="@+id/next_song"
+        app:layout_constraintStart_toEndOf="@+id/prev_song"
         app:layout_constraintTop_toTopOf="@+id/hguideline5" />
 
     <ImageView
         android:id="@+id/speak"
         android:layout_width="60dp"
         android:layout_height="101dp"
-        android:layout_marginTop="44dp"
         android:src="@drawable/mic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
